@@ -1,0 +1,248 @@
+@font-face {
+	font-family: Raleway;
+	src: url("assets/Raleway-Thin.otf");
+}
+@font-face {
+	font-family: ElegantLux;
+	src: url("assets/ElegantLux-Mager.otf");
+}
+
+body {
+	font-family: ElegantLux;
+	color: white;
+	background-color: #262626;
+	overflow-x: hidden;
+}
+
+p {
+	font-size: 20px; 
+	word-spacing: 2px;
+	line-height: 28px;
+}
+
+video, .i {
+	width: 375px;
+	height: 213px;
+	cursor: pointer;
+}
+.i {
+	-webkit-filter:brightness(22%);
+   -moz-filter:brightness(22%);
+   filter:url(#brightness);
+   filter:brightness(22%);
+}
+a:hover + img, .i:hover {
+   -webkit-filter:brightness(60%);
+   -moz-filter:brightness(60%);
+   filter:url(#brightness);
+   filter:brightness(60%);
+}
+
+.hdr { position: relative; }
+.hdr, .hdrBkg {
+	left: -20px;
+	top: -20px;
+	width: calc(100% + 40px);
+	height: 170px;
+	opacity: .95;
+	z-index: 1;
+}
+.hdrBkg {
+	position: fixed;
+	border-bottom: 2px solid black;
+}
+.hdrBkg img {
+	width: 100%;
+	height: 100%;
+}
+
+.logo a {
+	font-family: Raleway;
+	font-size: 80px;
+	color: #262626;
+	text-decoration: none;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+.info {
+	position: fixed;
+	text-align: center;
+	white-space: nowrap;
+	padding-left: 25px;
+	overflow: hidden;
+}
+.info a {
+	font-size: 28px;
+	color: white;
+	letter-spacing: 5px;
+	text-decoration: none;
+	background: #262626;
+	border: .5px solid black;
+	padding: 4px;
+	margin-top: 8px;
+	margin-right: 6px;
+	width: 180px;
+	display: inline-block;
+}
+.info a:hover { color: gold; }
+
+.cCtnr {
+	text-align: center;
+	margin: 0 auto;
+}
+.cCtnr div {
+	padding: 1.5%;
+	border-radius: 100px;
+	position: relative;
+	width: 375px;
+	display: inline-block;
+	overflow: hidden;
+}
+.cCtnr a {
+	font-size: 50px;
+	color: white;
+	letter-spacing: 0px;
+	text-decoration: none;
+	position: absolute;
+	left: .75%;
+	width: 100%;
+	text-align: center;
+	top: 90px;
+	pointer-events: none;
+}
+
+.p a {
+	top: 70px;
+	font-size: 45px;
+}
+
+a.sub { font-size: 25px; }
+
+.left {
+	font-size: 16px;
+	text-align: left;
+	width: 35%;
+	position: relative;
+	padding-left: 75px;
+	float: left;
+}
+.left a { color: white; }
+.left a:hover { color: gold; }
+.left h1 { color: gold; }
+
+.mockups1 img, .mockups2 img, .slides img {
+	position: relative;
+	display: inline-block;
+	float: right;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+.mockups1 img {
+	width: calc(275px + 25%);
+	margin-left: -300px;
+	margin-right: -110px;
+}
+
+.mockups2 img {
+	width: calc(90px + 25%);
+	top: 50px;
+	margin-left: -220px;
+	margin-right: 50px;
+}
+
+.me img {
+	width: calc(80px + 23%);
+	margin-top: 25px;
+	margin-right: 7%;
+	position: relative;
+	display: inline-block;
+	float: right;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+.slides img {
+	margin-top: 25px;
+	width: calc(35px + 27%);
+	margin-left: -390px;
+	margin-right: 40px;
+	position: relative;
+	display: inline-block;
+	float: right;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+.vids {
+	position: relative;
+   top: 50px;
+	left: 17%;
+	height: 0;
+	padding-bottom: 32%;
+	padding-top: 35px;
+   overflow: hidden;
+}
+
+.vids iframe {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 60%;
+    height: 60%;
+}
+
+.responder { margin-top: 150px; }
+
+.photos { text-align: center; }
+.photos img { height: 800px; }
+
+#current { color: grey; }
+
+@media screen and (min-width: 1651px) { .cCtnr { width: 80%; } }
+
+@media screen and (min-width: 1151px){
+	.logo a {
+		position: fixed;
+		left: 80px;
+		top: 25px;
+	}
+
+	.info {
+		top: 20px;
+		right: -140px;
+		width: 60%;
+	}
+}
+
+@media screen and (max-width: 1150px) {
+	.logo { text-align: center; }
+	.logo a {
+		position: fixed;
+		text-align: center;
+		left: -25%;
+		top: 0px;
+		width: 150%;
+		display: inline-block;
+	}
+
+	.info {
+		width: 100%;
+   	text-align: center;
+   	margin: 0 auto;
+		margin-top: 110px;
+	}
+	
+	.responder { margin-top: 225px; }
+	
+	.hdrBkg { height: 225px; }
+	
+	.p44 img {
+		float: none;
+		margin-top: 25px;
+		margin-left: 25px;
+		margin-right: -325px;
+	}
+	.floragraph img { margin-top: 25px; }
+}
